@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Cart</title>
+</head>
+<body>
+    <h1>Welcome to Campus Cart!</h1>
+    <h2>Your College Marketplace</h2>
+    <p>Buy and sell products with fellow students.</p>
+
+    <button>Explore Products</button>
+</body>
+</html>
