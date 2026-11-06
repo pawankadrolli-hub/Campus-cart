@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Campus Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Cart - Student Marketplace</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+        header { background: linear-gradient(135deg, #004080, #0066cc); color: white; padding: 2rem 1rem; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        nav { background: #002b5c; color: white; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        nav .logo { font-weight: bold; font-size: 1.2rem; }
+        nav a { color: white; text-decoration: none; background: #28a745; padding: 0.5rem 1rem; border-radius: 4px; font-weight: bold; }
+        nav a:hover { background: #218838; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        .container h2 { margin-bottom: 1.5rem; color: #004080; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-body { padding: 1.5rem; }
+        .card h3 { color: #004080; margin-bottom: 0.5rem; }
+        .card p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; }
+        .price { color: #28a745; font-size: 1.3rem; font-weight: bold; margin-bottom: 1rem; }
+        .btn { display: block; width: 100%; background: #004080; color: white; text-align: center; padding: 0.75rem; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; text-decoration: none; }
+        .btn:hover { background: #002b5c; }
+        footer { text-align: center; padding: 2rem; color: #777; margin-top: 3rem; border-top: 1px solid #ddd; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Campus Cart!</h1>
-    <h2>Your College Marketplace</h2>
-    <p>Buy and sell products with fellow students.</p>
 
-    <button>Explore Products</button>
+    <header>
+        <h1>Campus Cart</h1>
+        <p>The safest place for college students to buy & sell used items</p>
+    </header>
+
+    <nav>
+        <div class="logo">🎓 Campus Cart Marketplace</div>
+        <a href="#">+ Post an Item</a>
+    </nav>
+
+    <div class="container">
+        <h2>Featured Student Listings</h2>
+        
+        <div class="grid">
+            <!-- Item 1 -->
+            <div class="card">
+                <div class="card-body">
+                    <h3>Engineering Calculus Textbook</h3>
+                    <p>9th Edition. Barely used, no highlights or torn pages.</p>
+                    <div class="price">$25.00</div>
+                    <a href="#" class="btn">Contact Seller</a>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card">
+                <div class="card-body">
+                    <h3>TI-84 Plus Graphing Calculator</h3>
+                    <p>Essential for math and stats classes. Works perfectly.</p>
+                    <div class="price">$45.00</div>
+                    <a href="#" class="btn">Contact Seller</a>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="card">
+                <div class="card-body">
+                    <h3>Dorm Room Mini Fridge</h3>
+                    <p>Clean, ice-cold, and fits perfectly under a dorm bed.</p>
+                    <div class="price">$50.00</div>
+                    <a href="#" class="btn">Contact Seller</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Campus Cart. Built for students, by students.</p>
+    </footer>
+
 </body>
 </html>
